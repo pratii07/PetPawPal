@@ -136,6 +136,26 @@ app_license = "mit"
 # Document Events
 # ---------------
 # Hook on document methods and events
+# doc_events = {
+#     "Appointment Booking": {
+#         "before_insert": "petpawpal.petpawpal.doctype.appointment_booking.appointment_booking.throw_emogi"
+#     }
+# }
+
+# doc_events = {  
+#     "Appointment Booking": {  
+#         "before_submit": "petpawpal.petpawpal.doctype.appointment_booking.appointment_booking.before_submit",
+#         "on_update": "petpawpal.petpawpal.doctype.appointment_booking.appointment_booking.submit_on_confirmed"  
+#     }  
+# }
+
+# doc_events = {
+#     "Demo": {
+#         "before_save": "petpawpal.petpawpal.doctype.demo.demo.create_task"
+#     }
+# }
+
+
 
 # doc_events = {
 # 	"*": {
@@ -145,6 +165,7 @@ app_license = "mit"
 # 	}
 # }
 
+Fixtures = [{"dovtype":"Demo"}]
 # Scheduled Tasks
 # ---------------
 

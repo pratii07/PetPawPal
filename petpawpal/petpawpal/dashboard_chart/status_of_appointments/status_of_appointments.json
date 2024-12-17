@@ -1,0 +1,33 @@
+{
+ "chart_name": "Status Of Appointments",
+ "chart_type": "Report",
+ "creation": "2024-12-07 11:28:39.163962",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2024-12-07 11:43:59.788845",
+ "modified_by": "Administrator",
+ "module": "PetPawPal",
+ "name": "Status Of Appointments",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Pets Counts",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Line",
+ "use_report_chart": 0,
+ "x_field": "appointment_date",
+ "y_axis": [
+  {
+   "color": "#CB2929",
+   "y_field": "count"
+  }
+ ]
+}

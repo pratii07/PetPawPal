@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{pet_name}-{owner_name}",
+ "creation": "2024-12-03 16:02:17.584386",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_2zkw",
+  "pet_name",
+  "category",
+  "vet_name",
+  "appointment_date",
+  "time",
+  "fees",
+  "column_break_nuju",
+  "status",
+  "owner_name",
+  "email",
+  "amended_from",
+  "phone"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_2zkw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Appointment Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "pet_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pet Name",
+   "options": "Pet Profiles Management"
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Appointment Date"
+  },
+  {
+   "fieldname": "column_break_nuju",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "pet_name.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fetch_from": "pet_name.owner_name",
+   "fieldname": "owner_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Owner Name"
+  },
+  {
+   "fieldname": "vet_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vet Name",
+   "options": "Veterinarian"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nconfirmed\nNot Yet",
+   "read_only_depends_on": "eval:doc.status === \"confirmed\"\n"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fetch_from": "pet_name.category",
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "fieldname": "fees",
+   "fieldtype": "Currency",
+   "label": "Fees",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-11 23:33:45.157396",
+ "modified_by": "Administrator",
+ "module": "PetPawPal",
+ "name": "Appointment Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

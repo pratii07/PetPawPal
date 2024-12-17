@@ -1,0 +1,27 @@
+<div class="pet-box">
+	<p>Name : <strong>{{ doc.pet_name}} </strong></p>
+	<p>Category : <strong>{{ doc.category}} </strong></p>
+	<a href="{{ doc.route }}" class="details-link">View Details →</a>
+</div>
+
+<style>
+	.pet-box{
+		background-color : #dce0d9;
+		padding :10px;
+		margin-bottom : 13px;
+		border: 2px solid #ccc; 
+		border-radius: 10px;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
+		font-size:15px;
+	    font-family: cursive;
+
+	}
+    p{
+		color : #1c2541;
+	}
+	.details-link{
+		color : #006d77;
+		font-weight: bold;
+	}
+</style>
+<!-- this is a sample default list template -->

@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{pet_name}",
+ "creation": "2024-12-03 15:43:28.141687",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "pet_details_section",
+  "pet_name",
+  "category",
+  "color",
+  "image",
+  "column_break_aevz",
+  "age",
+  "weight",
+  "route",
+  "is_published",
+  "owner_details_section",
+  "owner_name",
+  "email",
+  "column_break_yqzj",
+  "address",
+  "medical_history_section",
+  "health_issue",
+  "column_break_fzpp",
+  "vaccines",
+  "last_date_of_vaccine"
+ ],
+ "fields": [
+  {
+   "fieldname": "pet_details_section",
+   "fieldtype": "Section Break",
+   "label": "Pet Details"
+  },
+  {
+   "fieldname": "pet_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pet Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "column_break_aevz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(in Months)",
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age",
+   "non_negative": 1
+  },
+  {
+   "description": "(in Kg)",
+   "fieldname": "weight",
+   "fieldtype": "Int",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "owner_details_section",
+   "fieldtype": "Section Break",
+   "label": "Owner Details"
+  },
+  {
+   "fieldname": "owner_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Owner Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_yqzj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "medical_history_section",
+   "fieldtype": "Section Break",
+   "label": "Medical History"
+  },
+  {
+   "fieldname": "health_issue",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Health Issue",
+   "options": "Obesity\nCanine distemper\nCanine influenza\nCanine parvovirus\nExternal parasites\nHeartworms\nLeptospirosis\nNo Issue"
+  },
+  {
+   "fieldname": "column_break_fzpp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vaccines",
+   "fieldtype": "Select",
+   "label": "Vaccines",
+   "options": "No Need\nRabies\nannually\nDHPPi\nLeptospirosis\nParvo\nCanine coronavirus\nKennel cough"
+  },
+  {
+   "fieldname": "last_date_of_vaccine",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Last Date Of Vaccine"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Dog\nCat\nFish\nRabbit\nParrot\nTurtles\nOthers"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is_published"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2024-12-11 23:32:24.709022",
+ "modified_by": "Administrator",
+ "module": "PetPawPal",
+ "name": "Pet Profiles Management",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "pets",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

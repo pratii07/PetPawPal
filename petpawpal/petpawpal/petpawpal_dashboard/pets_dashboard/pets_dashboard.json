@@ -1,0 +1,36 @@
+{
+ "cards": [
+  {
+   "card": "Pets Details"
+  },
+  {
+   "card": "Pets Appoinments"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Pets Profile",
+   "width": "Half"
+  },
+  {
+   "chart": "Status Of Appointments",
+   "width": "Half"
+  },
+  {
+   "chart": "Status Of Appointments",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-12-07 00:03:54.591428",
+ "dashboard_name": "Pets Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-12-07 11:43:59.875821",
+ "modified_by": "Administrator",
+ "module": "PetPawPal",
+ "name": "Pets Dashboard",
+ "owner": "Administrator"
+}

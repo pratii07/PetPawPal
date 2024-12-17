@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "",
+ "creation": "2024-12-08 21:48:32.819232",
+ "date_changed": "modified",
+ "days_in_advance": 1,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Appointment Booking",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "\nDear {{ doc.owner_name }},<br><br>\n\nThank you for scheduling an appointment for your pet, {{ doc.pet_name }}.<br><br>\n\nWe\u2019re excited to see you and your furry friend at our clinic. If you have any questions or need to reschedule, feel free to contact us.<br><br>\n\nLooking forward to providing the best care for {{ doc.pet_name }}.<br><br>\n\nThank you,<br>\nPetPawPal Team",
+ "message_type": "HTML",
+ "modified": "2024-12-08 22:16:38.553011",
+ "modified_by": "Administrator",
+ "module": "PetPawPal",
+ "name": "Next Checkup",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Thank You for Booking Your Appointment!"
+}
